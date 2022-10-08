@@ -1,0 +1,65 @@
+.header_nav_ {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-items: center;
+  background-color: #1c242d80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.menu_link {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3em;
+  margin: 0 10px;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+._header__nav__global_sbnim_78 {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+
+._header__nav__menu_sbnim_85, ._header__nav__menuBurger_sbnim_290 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  background-color: #0d2538;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  height: auto;
+  position: fixed;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  width: 300px;
+}
+
+@media (max-width: 1000px) {}
+._header__nav__menu__one_sbnim_275, ._header__nav__menuBurger__one_sbnim_303 {
+    top: 0;
+}
