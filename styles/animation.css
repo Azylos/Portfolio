@@ -1,0 +1,134 @@
+.chargement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    z-index: 3;
+  }
+  
+  .chargement .anneau {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #601bcf;
+    animation: loader 4s linear infinite;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .chargement .anneau::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #601bcf;
+    box-shadow: 0 0 0 5px #601bcf33,
+    0 0 0 10px #601bcf22,
+    0 0 0 20px #601bcf11,
+    0 0 20px #601bcf,
+    0 0 50px #601bcf;
+  }
+  
+  .chargement .anneau:nth-child(2){
+    animation: loader2 4s linear infinite;
+    animation-delay: -1s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #1bcf93;
+  }
+  
+  .chargement .anneau:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #1bcf93;
+    box-shadow: 0 0 0 5px #1bcf9333,
+    0 0 0 10px #1bcf9322,
+    0 0 0 20px #1bcf9311,
+    0 0 20px #1bcf93,
+    0 0 50px #1bcf93;
+  }
+  
+  @keyframes loader2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .chargement .anneau:nth-child(3) {
+    animation: loader2 4s linear infinite;
+    animation-delay: -3s;
+    position: absolute;
+    top: 380px;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #cf1b1b;
+  }
+  
+  .chargement .anneau:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #cf1b1b;
+    box-shadow: 0 0 0 5px #cf1b1b33,
+    0 0 0 10px #cf1b1b22,
+    0 0 0 20px #cf1b1b11,
+    0 0 20px #cf1b1b,
+    0 0 50px #cf1b1b;
+  }
+  
+  .chargement p {
+    position: absolute;
+    color: #484848;
+    font-size: 2em;
+    font-family: consolas;
+    bottom: 250px;
+    letter-spacing: 0.15em;
+    animation: flash 1.2s linear infinite;
+  }
+
+  @keyframes flash {
+    0% {
+      color: #601bcf;
+      text-shadow: 0 0 7px #601bcf;
+    }
+    90% {
+      color: #484848;
+      text-shadow: none;
+    }
+    100% {
+      color: #601bcf;
+      text-shadow: 0 0 7px #601bcf;
+    }
+  }
+
+  .fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+  }
