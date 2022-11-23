@@ -374,7 +374,7 @@ footer p {
     background: #fafafa;
     top: 100%;
     left: 0;
-    height: 100vh;
+    height: 1000vh;
     padding: 15px 50px 15px 20px;
     border-right: 1px solid #c5c5c6;
     transform: translate(-100%);
@@ -389,7 +389,7 @@ footer p {
 
   .carte {
     flex-direction: column;
-    top: 100px;
+    top: 350px;
     left: 270px;
   }
 
