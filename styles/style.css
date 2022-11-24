@@ -288,11 +288,32 @@ nav {
   opacity: 1;
 }
 
+.titre-bannière {
+  background-position: bottom;
+  background-image: url(../images/accueil.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 105%;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.titre-bannière h1 {
+  font-size: 6em;
+  line-height: 3.9em;
+  font-weight: 600;
+  color: rgb(2, 0, 0);
+  margin: auto;
+}
+
 footer { 
   position: fixed;
   bottom: 0%;
   width: 100%;
-  font-family: 'lucida sans', sans-serif;
+  /* font-family: 'lucida sans', sans-serif; */
   font-size: 90%;
   height: 60px;
   padding: 20px 0 5px 0;
@@ -305,6 +326,15 @@ footer {
 footer p { 
   line-height: 1.7em;
   padding: 0 0 10px 0;
+}
+
+@media (max-width: 1280px) {
+  .titre-bannière {
+    background-position: top;
+    background-position-x: left;
+    /* height: 300px; */
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -393,4 +423,14 @@ footer p {
     left: 270px;
   }
 
+  .titre-bannière {
+    /* background-position: top;
+    background-position-x: left; */
+    height: 215px;
+  }
+
+  .titre-bannière h1 {
+    font-size: 4em;
+    line-height: 4.2em;
+  }
 }
