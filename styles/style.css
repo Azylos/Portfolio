@@ -22,6 +22,7 @@ body {
 
 nav {
   position: fixed;
+  top: 0%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -299,6 +300,12 @@ nav {
   text-align: center;
   display: flex;
   margin-bottom: 10px;
+  border-bottom: 2px solid #000201;
+  box-shadow:
+    0 0 14px #13f78d,
+    inset 0 0 0 #fbfbfb00,
+    0 0 30px #7613f7,
+    inset 0 0 0 #fbfbfb00; 
 }
 
 .titre-bannière h1 {
@@ -309,23 +316,36 @@ nav {
   margin: auto;
 }
 
+.contenu-page {
+  margin-top: 30px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.contenu-page iframe {
+  height: 245mm;
+  width: 410mm;
+  padding-left: 250px;
+  padding-right: 480px;
+}
+
 footer { 
-  position: fixed;
-  bottom: 0%;
   width: 100%;
-  /* font-family: 'lucida sans', sans-serif; */
   font-size: 90%;
-  height: 60px;
-  padding: 20px 0 5px 0;
   text-align: center; 
+  align-items: center;
   background: #fafafa;
-  color: #A8AA94;
-  margin: 0 0 0 0;
+  box-shadow: inset 0px -1px 0px #c5c5c6;
+  color: #0a0a0a;
+}
+
+.bas {
+  position: absolute;
+  bottom: 0%;
 }
 
 footer p { 
   line-height: 1.7em;
-  padding: 0 0 10px 0;
 }
 
 @media (max-width: 1280px) {
@@ -433,4 +453,17 @@ footer p {
     font-size: 4em;
     line-height: 4.2em;
   }
+
+  .contenu-page {
+    margin-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .contenu-page iframe {
+    height: 100mm;
+    width: 100mm;
+    padding-left: 0%;
+  }
+
 }
