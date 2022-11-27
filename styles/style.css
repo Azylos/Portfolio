@@ -321,8 +321,14 @@ nav {
   padding-left: 250px;
   padding-right: 250px;
 }
+.contenu-page .B-CV {
+  display: none;
+}
 
-.contenu-page iframe {
+.contenu-page .show-CV {
+  display: block;
+}
+.contenu-page .show-CV iframe {
   height: 245mm;
   width: 410mm;
   padding-left: 250px;
@@ -358,6 +364,9 @@ footer p {
 }
 
 @media (max-width: 900px) {
+  .home {
+    background-size: cover;
+  }
   nav {
     padding: 15px 20px;
     position: fixed;
@@ -459,11 +468,97 @@ footer p {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .contenu-page .B-CV {
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+  }
   
-  .contenu-page iframe {
-    height: 100mm;
-    width: 100mm;
-    padding-left: 0%;
+  .contenu-page .B-CV a {
+    position: relative;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    background: #45f3ff;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  
+  .contenu-page .B-CV a:hover {
+    opacity: 1;
+    letter-spacing: 0.25em;
+    background: #13f78d;
+    color: #13f78d;
+    box-shadow: 0 0 35px #13f78d;
+  }
+  
+  .contenu-page .B-CV a::before {
+   content: '';
+   position: absolute;
+   inset: 2px;
+   background: #000;
+  }
+  
+  .contenu-page .B-CV a span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contenu-page .B-CV a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .contenu-page .B-CV a i::before {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 30px;
+    height: 10px;
+    border: 2px solid #13f78d;
+    background: #27282c;
+    transform: translate(-50%);
+    transition: 0.5s;
+  }
+  
+  .contenu-page .B-CV a:hover  i::before {
+    width: 60px;
+    left: 20%;
+  }
+  
+  .contenu-page .B-CV a i::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 30px;
+    height: 10px;
+    border: 2px solid #13f78d;
+    background: #27282c;
+    transform: translate(-50%);
+    transition: 0.5s;
+  }
+  
+  .contenu-page .B-CV a:hover  i::after {
+    width: 60px;
+    left: 80%;
+  }
+  
+  .contenu-page .show-CV {
+    display: none;
+  }
+
+  footer { 
+    position: relative;
+    bottom: 0%;
   }
 
 }
