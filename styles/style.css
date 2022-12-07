@@ -329,10 +329,8 @@ nav {
   display: block;
 }
 .contenu-page .show-CV iframe {
-  height: 245mm;
-  width: 410mm;
-  padding-left: 250px;
-  padding-right: 480px;
+  height: 320mm;
+  width: 220mm;
 }
 
 footer { 
