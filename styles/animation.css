@@ -1,5 +1,5 @@
 .chargement {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     display: flex;
@@ -132,4 +132,18 @@
     opacity: 0;
     transition: opacity 0.4s ease-out;
     display: flex;
+  }
+
+  @media (max-width: 900px) {
+    .chargement p {
+      bottom: 120px;
+    }
+
+    .chargement .anneau {
+      bottom: 50px;
+    }
+
+    .chargement .anneau:nth-child(3) {
+      top: 350px;
+    }
   }
