@@ -16,20 +16,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
       rel="stylesheet"
-    />
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var formData = new FormData(event.target);
-        fetch('send-form', {
-          method: 'POST',
-          body: formData
-        }).then(function(response) {
-          // Affiche un message de confirmation lorsque le formulaire est envoyé avec succès
-          alert('Merci pour votre message !');
-        });
-      });
-    </script>    
+    /> 
   </head>
   <body>
         <!-- chargement -->
@@ -59,15 +46,6 @@
     <div class="titre-bannière">
       <h1>Contact</h1>
     </div>
-    <form id="contact-form" action="send-form" method="post">
-      <label for="name">Nom:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" cols="30"></textarea><br>
-      <button type="submit">Envoyer</button>
-  </form> 
     <br><br><br><br><br>
     <footer class="bas">
       <p>&copy; Toma BARRET 2022. Tout droits réservés.</p>
