@@ -21,7 +21,7 @@
       document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         var formData = new FormData(event.target);
-        fetch('/send-form', {
+        fetch('send-form', {
           method: 'POST',
           body: formData
         }).then(function(response) {
@@ -59,7 +59,7 @@
     <div class="titre-bannière">
       <h1>Contact</h1>
     </div>
-    <form id="contact-form" action="/send-form" method="post">
+    <form id="contact-form" action="send-form" method="post">
       <label for="name">Nom:</label><br>
       <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label><br>
